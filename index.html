@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/icomoon/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style/css/main.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="forms">
+        <div class="create">
+          <div class="container">
+            <div class="title">Create an Account</div>
+
+            <form action="#" class="form" method="post">
+              <div class="row-holder">
+                <div class="column-holder first-name">
+                  <div class="label-holder">
+                    <label for="first-name" class="label first-name"
+                      >First Name</label
+                    >
+                  </div>
+                  <div class="input-holder">
+                    <input
+                      type="text"
+                      class="input first"
+                      id="first-name"
+                      autofocus
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="column-holder last-name">
+                  <div class="label-holder">
+                    <label for="last-name" class="label last-name"
+                      >Last Name</label
+                    >
+                  </div>
+                  <div class="input-holder">
+                    <input
+                      type="text"
+                      class="input"
+                      id="last-name"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="column-holder">
+                <div class="label-holder e-mail">
+                  <label for="e-mail" class="label e-mail">E-mail</label>
+                </div>
+                <div class="input-holder e-mail">
+                  <input
+                    type="email"
+                    class="input"
+                    id="e-mail"
+                    placeholder=""
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="text-holder">
+                We'll never share your email with anyone else.
+              </div>
+
+              <ul class="radio-list">
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="radio-name" />
+                    <span class="radio-text">Male</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio">
+                    <input type="radio" name="radio-name" />
+                    <span class="radio-text">Female</span>
+                  </label>
+                </li>
+              </ul>
+
+              <div class="row-holder">
+                <div class="column-holder country">
+                  <div class="label-holder">
+                    <label for="country" class="label country">Country</label>
+                  </div>
+                  <div class="select-holder">
+                    <select name="country" id="country" class="select" required>
+                      <option
+                        class="option-select"
+                        value=""
+                        disabled
+                        selected
+                        hidden
+                      >
+                        Select
+                      </option>
+                      <option value="ukraine">Ukraine</option>
+                      <option value="germany">Germany</option>
+                      <option value="paris">Paris</option>
+                      <option value="poland">Poland</option>
+                      <option value="japan">Japan</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="column-holder city">
+                  <div class="label-holder">
+                    <label for="city" class="label city">City</label>
+                  </div>
+                  <div class="input-holder">
+                    <input
+                      type="text"
+                      class="input"
+                      id="city"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn" type="submit" formtarget="_blank">
+                Sign Up
+              </button>
+
+              <div class="text-holder center">
+                By clicking the 'Sign Up' button, you confirm that you accept
+                our
+                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="ul-holder">
+                <ul class="ul">
+                  <li class="li">Have an account?</li>
+                  <li class="li log-in">Log In</li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="container">
+            <div class="title">Profile</div>
+
+            <form action="#" class="form" method="post">
+              <div class="row-holder">
+                <div class="column-holder">
+                  <div class="avatar-holder">
+                    <img
+                      src="./src/img/profile-photo.jpg"
+                      alt="profile-photo"
+                    />
+                  </div>
+                </div>
+
+              <div class="column-holder">
+                  <div class="input-holder file">
+                    <label class="custom-file" for="profile-img">
+                      <input
+                        type="file"
+                        class="add-file"
+                        max-size="1024"
+                        name="profile-img"
+                        id="profile-img"
+                        accept=".jpg, .jpeg, .png"
+                      />
+                      <span class="download">Download photo</span>
+                      <span class="icon-camera"></span>
+                    </label>
+                  </div>
+                  <div class="text-holder">Up to 1 MB (300x300 px)</div>
+                </div>
+
+                <div class="column-holder reset">
+                  <button type="reset">
+                    <i class="icon-delete"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="row-holder">
+                <div class="column-holder name">
+                  <div class="label-holder">
+                    <label for="name" class="label name">Name</label>
+                  </div>
+                  <div class="input-holder">
+                    <input
+                      type="text"
+                      class="input first name"
+                      id="name"
+                      autofocus
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="column-holder">
+                  <div class="label-holder e-mail">
+                    <label for="e-mail" class="label e-mail">E-mail</label>
+                  </div>
+                  <div class="input-holder e-mail">
+                    <input
+                      type="email"
+                      class="input"
+                      id="e-mail"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="text-holder required">
+                    This field is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-holder">
+                <div class="column-holder country">
+                  <div class="label-holder">
+                    <label for="country" class="label country">Country</label>
+                  </div>
+                  <div class="select-holder">
+                    <select name="country" id="country" class="select" required>
+                      <option
+                        class="option-select"
+                        value=""
+                        disabled
+                        selected
+                        hidden
+                      >
+                        Select
+                      </option>
+                      <option value="ukraine">Ukraine</option>
+                      <option value="germany">Germany</option>
+                      <option value="paris">Paris</option>
+                      <option value="poland">Poland</option>
+                      <option value="japan">Japan</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="column-holder city">
+                  <div class="label-holder">
+                    <label for="city" class="label city">City</label>
+                  </div>
+                  <div class="input-holder">
+                    <input
+                      type="text"
+                      class="input"
+                      id="city"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-holder">
+                <div class="column-holder zip-code">
+                  <div class="label-holder">
+                    <label for="zip-code" class="label zip-code"
+                      >Zip Code</label
+                    >
+                  </div>
+                  <div class="input-holder">
+                    <input
+                      type="number"
+                      class="input"
+                      id="zip-code"
+                      autofocus
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="column-holder phone-number">
+                  <div class="label-holder">
+                    <label for="phone-number" class="label phone-number"
+                      >Phone Number</label
+                    >
+                  </div>
+                  <div class="input-holder">
+                    <input
+                      type="tel"
+                      class="input"
+                      id="phone-number"
+                      placeholder="+38(0__) ___-__-__"
+                      required
+                      title="+38(0__) ___-__-__"
+                      pattern=""
+                      minlength=" "
+                      maxlength=" "
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn small" type="submit" formtarget="_blank">
+                Update
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <link rel="stylesheet" href="./js/js.js" />
+  </body>
+</html>

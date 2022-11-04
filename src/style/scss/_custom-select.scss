@@ -1,0 +1,66 @@
+.select-holder {
+  display: flex;
+  @include size(245px, 38px);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 33%;
+    right: 15px;
+    display: block;
+
+    //Removing the click from the triangle
+    pointer-events: none;
+
+    //Draw a custom up arrow
+    @include size(0, 0);
+    border-style: solid;
+    border-width: 0 5.5px 5.5px 5.5px;
+    border-color: transparent transparent #969696 transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    right: 15px;
+    display: block;
+    pointer-events: none;
+
+    //Draw a custom down arrow
+    @include size(0, 0);
+    border-style: solid;
+    border-width: 5.5px 5.5px 0 5.5px;
+    border-color: #969696 transparent transparent transparent;
+  }
+}
+
+.select {
+  //Remove browser arrow
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  background-color: $bg;
+  padding: 8px 38px 8px 10px;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    border: none;
+    box-shadow: 0 0 0 1px $blue, 0 0 10px #7e9bbd;
+  }
+
+  //Remove arrow in IE 10 и 11
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.option-select {
+  @include font-setting(400, 13px, 18px, -0.1px);
+}

@@ -1,0 +1,33 @@
+$bg-main: #f7f7f7;
+$bg: #ffffff;
+$bg-radio:  #007bff;
+$shade-of-black: #1c1c1c;
+$light-grey: #969696;
+$dark-grey: #545454;
+$blue: #007bff;
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin font-setting($f-w, $f-s, $l-h, $l-s) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $f-w;
+  font-size: $f-s;
+  line-height: $l-h;
+  letter-spacing: $l-s;
+}
+
+.main {
+  max-width: 1440px;
+  height: auto;
+  background-color: $bg-main;
+  padding: 55px 30px 55px 135px;
+}
